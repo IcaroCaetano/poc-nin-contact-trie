@@ -48,6 +48,11 @@ proc getContactId*(t: ContactTrie, name: string): int =
       return -1
     node = node.children[idx]
 
+if node.isContact:
+    return node.userId
+  else:
+    return -1
+
 ```
 
 ## 2. Test Suite (test_contact_trie.nim)
@@ -64,6 +69,3 @@ Execute the test file using the command:
 ```
 nim r test_contact_trie.nim
 ```
-    return node.userId
-  else:
-    return -1
