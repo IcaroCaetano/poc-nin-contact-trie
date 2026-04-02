@@ -47,8 +47,23 @@ proc getContactId*(t: ContactTrie, name: string): int =
     if node.children[idx] == nil:
       return -1
     node = node.children[idx]
-  
-  if node.isContact:
+
+```
+
+## 2. Test Suite (test_contact_trie.nim)
+
+The test suite validates the integrity of the data structure, ensuring that exact matches are found, prefixes are not incorrectly identified as full names, and IDs can be updated.
+
+## How to Run
+Ensure you have the Nim compiler installed.
+
+Keep both files in the same directory (or adjust the import path).
+
+Execute the test file using the command:
+
+```
+nim r test_contact_trie.nim
+```
     return node.userId
   else:
     return -1
