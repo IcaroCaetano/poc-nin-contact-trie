@@ -6,7 +6,7 @@ This project demonstrates a practical implementation of a **Trie (Prefix Tree)**
 
 ## 1. Domain Logic (`contact_trie.nim`)
 
-The core logic handles the mapping of alphabetical names to numeric User IDs. Each node represents a character, allowing for $O(L)$ lookups, where $L$ is the length of the name.
+The core logic handles the mapping of alphabetical names to numeric User IDs. Each node represents a character, allowing for `$O(L)$` lookups, where `$L$` is the length of the name.
 
 ```nim
 type
