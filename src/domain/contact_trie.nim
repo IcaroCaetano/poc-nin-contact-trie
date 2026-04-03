@@ -14,7 +14,6 @@ proc newContactTrie*(): ContactTrie =
   ContactTrie(root: newContactNode())
 
 proc charIndex(c: char): int =
-  # It only supports lowercase letters a-z.
   ord(c) - ord('a')
 
 # Enter a name and associate a user ID.
