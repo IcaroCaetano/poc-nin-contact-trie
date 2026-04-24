@@ -22,3 +22,23 @@ Execute the test file using the command:
 ```
 nim r test_contact_trie.nim
 ```
+
+```plaintext
+          [Root]
+            |
+           (i)  <-- Shared by all
+          /   \
+        (c)   (d) <-- Here it branches out!
+         |     |
+        (a)   (e)
+         |     |
+        (r)   (l)
+         |     |
+        (o)   (f) ... (idelfonso)
+         |
+      [isContact: true, ID: 1] ("icaro" It ends here.)
+         |
+        (s)
+         |
+      [isContact: true, ID: 2] ("icaros" It ends here.)
+```
