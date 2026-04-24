@@ -22,6 +22,7 @@ Execute the test file using the command:
 ```
 nim r test_contact_trie.nim
 ```
+## Tree Effect
 
 ```plaintext
           [Root]
